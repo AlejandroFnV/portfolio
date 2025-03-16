@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Download } from "lucide-react"
+import CvBtn from "./cv-btn"
 
 export default function About() {
   const [ref, inView] = useInView({
@@ -29,8 +30,8 @@ export default function About() {
           className="flex flex-col md:flex-row items-center gap-10"
         >
           <div className="md:w-1/2 flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary">
-              <Image src="/placeholder.svg?height=400&width=400" alt="Tu Nombre" fill className="object-cover" />
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary bg-black">
+              <Image src="/images/me.JPG" alt="Tu Nombre" fill className="object-cover" />
             </div>
           </div>
 
@@ -55,10 +56,7 @@ export default function About() {
             </p>
 
             <div className="pt-4">
-              <Button className="group">
-                <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
-                Descargar CV
-              </Button>
+              <CvBtn className="group cursor-pointer" />
             </div>
           </div>
         </motion.div>

@@ -33,31 +33,31 @@ export default function Skills() {
     {
       name: "Frontend",
       icon: <Code className="h-6 w-6" />,
-      description: "React, Next.js, Vue, HTML5, CSS3, Tailwind",
+      description: "React, Next.js, HTML5, CSS3, Tailwind",
       color: "from-purple-500 to-indigo-500",
     },
     {
       name: "Backend",
       icon: <Server className="h-6 w-6" />,
-      description: "Node.js, Express, Django, Laravel",
+      description: "Node.js, Django, Laravel",
       color: "from-blue-500 to-cyan-500",
     },
     {
       name: "Bases de Datos",
       icon: <Database className="h-6 w-6" />,
-      description: "MongoDB, PostgreSQL, MySQL, Firebase",
+      description: "MongoDB, PostgreSQL, MySQL, Firebase, MariaDB",
       color: "from-green-500 to-emerald-500",
     },
     {
       name: "UI/UX",
       icon: <Palette className="h-6 w-6" />,
-      description: "Figma, Adobe XD, Responsive Design",
+      description: "Figma, Responsive Design",
       color: "from-pink-500 to-rose-500",
     },
     {
       name: "Mobile",
       icon: <Smartphone className="h-6 w-6" />,
-      description: "React Native, Flutter",
+      description: "React Native, Expo",
       color: "from-orange-500 to-amber-500",
     },
     {
@@ -69,19 +69,19 @@ export default function Skills() {
     {
       name: "DevOps",
       icon: <Cloud className="h-6 w-6" />,
-      description: "Docker, CI/CD, AWS, Vercel",
+      description: "Docker, CI/CD, Vercel",
       color: "from-cyan-500 to-blue-500",
     },
     {
       name: "Testing",
       icon: <Braces className="h-6 w-6" />,
-      description: "Jest, Cypress, React Testing Library",
+      description: "Jest, PHPUnit",
       color: "from-red-500 to-pink-500",
     },
     {
       name: "Control de Versiones",
       icon: <GitBranch className="h-6 w-6" />,
-      description: "Git, GitHub, GitLab",
+      description: "Git, GitHub, Bitbucket",
       color: "from-emerald-500 to-green-500",
     },
     {

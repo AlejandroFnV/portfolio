@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { Badge } from "@/components/ui/badge"
-import { BriefcaseBusiness, Calendar, ExternalLink } from "lucide-react"
+import { Calendar, ExternalLink } from "lucide-react"
 
 interface ExperienceItem {
   id: number
@@ -24,19 +24,19 @@ export default function Experience() {
   const experiences: ExperienceItem[] = [
     {
       id: 1,
-      role: "Senior Full Stack Developer",
-      company: "TechInnovate Solutions",
-      period: "Enero 2022 - Presente",
+      role: "Project Manager",
+      company: "ECOPE Informática",
+      period: "Abril 2024 - Presente",
       description:
         "Lidero el desarrollo de aplicaciones web y móviles para clientes empresariales. Implementé una arquitectura de microservicios que mejoró el rendimiento en un 40% y reduje los tiempos de despliegue en un 60%.",
-      skills: ["React", "Node.js", "AWS", "Docker", "GraphQL"],
-      link: "#",
+      skills: ["React", "NextJS", "Docker", "GraphQL"],
+      link: "ecope.es",
     },
     {
       id: 2,
       role: "Full Stack Developer",
-      company: "Digital Creators Agency",
-      period: "Marzo 2020 - Diciembre 2021",
+      company: "ECOPE Informática",
+      period: "Diciembre 2021 - Junio 2024",
       description:
         "Desarrollé soluciones web personalizadas para clientes de diversos sectores. Creé un CMS a medida que aumentó la eficiencia del equipo de contenido en un 35%.",
       skills: ["Vue.js", "Express", "MongoDB", "Tailwind CSS"],
@@ -44,19 +44,9 @@ export default function Experience() {
     },
     {
       id: 3,
-      role: "Frontend Developer",
-      company: "WebSolutions Inc.",
-      period: "Junio 2018 - Febrero 2020",
-      description:
-        "Diseñé e implementé interfaces de usuario responsivas y accesibles. Colaboré en la renovación completa de la plataforma principal de la empresa, mejorando las métricas de UX en un 25%.",
-      skills: ["React", "Redux", "SASS", "Jest", "Figma"],
-      link: "#",
-    },
-    {
-      id: 4,
       role: "Desarrollador Web Junior",
-      company: "StartupLaunch",
-      period: "Enero 2017 - Mayo 2018",
+      company: "INSTITUTO EUROPEO DE ESTUDIOS EMPRESARIALES SA",
+      period: "Marzo 2021 - Junio 2021",
       description:
         "Participé en el desarrollo frontend de aplicaciones web para startups. Implementé mejoras de rendimiento que redujeron el tiempo de carga en un 30%.",
       skills: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
