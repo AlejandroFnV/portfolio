@@ -37,7 +37,9 @@ export default function Header() {
   const navLinks = [
     { name: "Inicio", href: "#home" },
     { name: "Sobre Mí", href: "#about" },
-    { name: "Proyectos", href: "#projects" },
+    { name: "Habilidades", href: "#skills" },
+    { name: "Experiencia", href: "#experience" },
+    // { name: "Proyectos", href: "#projects" },
     { name: "Contacto", href: "#contact" },
   ]
 
