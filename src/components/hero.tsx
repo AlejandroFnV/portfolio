@@ -4,8 +4,10 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ArrowDown } from "lucide-react"
+import { useTheme } from "next-themes"
 
 export default function Hero() {
+  const { theme } = useTheme()
   const [text, setText] = useState("")
   const fullText = "Desarrollador Full Stack"
   const [index, setIndex] = useState(0)
@@ -53,9 +55,6 @@ export default function Hero() {
         style={{ background: "var(--blob-cyan)", mixBlendMode: "multiply" }}
       />
 
-      {/* Grid pattern with reduced opacity */}
-      <div className="absolute inset-0 bg-grid-pattern" />
-
       {/* Gradient overlay for better text readability */}
       <div
         className="absolute inset-0"
@@ -66,18 +65,15 @@ export default function Hero() {
       />
 
       <div className="container relative z-10 px-4 md:px-6">
-        <div className="flex flex-col items-center text-center space-y-4 backdrop-blur-sm p-8 rounded-3xl glass">
+        <div className="flex flex-col items-center text-center space-y-4">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter">
-              Hola, soy <span style={{ color: "var(--primary)" }}>Alejandro Fernández Valdivia</span>
+              Hola, soy <span className="text-primary">Alejandro Fernández Valdivia</span>
             </h1>
           </motion.div>
 
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3, duration: 0.5 }}>
-            <h2
-              className="text-xl md:text-3xl lg:text-4xl font-medium h-12"
-              style={{ color: "var(--muted-foreground)" }}
-            >
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-medium h-12 text-muted-foreground">
               {text}
               <span className="animate-pulse">|</span>
             </h2>
@@ -88,10 +84,10 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.5 }}
             className="max-w-[600px] mt-4"
-            style={{ color: "var(--muted-foreground)" }}
           >
-            <p className="text-base md:text-lg">
-              Transformando ideas en experiencias digitales excepcionales con código limpio y diseño intuitivo.
+            <p className="text-base md:text-lg text-muted-foreground">
+              Construyo aplicaciones web y móviles funcionales, escalables y con un diseño intuitivo. Transformo ideas
+              en soluciones digitales eficientes.
             </p>
           </motion.div>
 
@@ -101,10 +97,7 @@ export default function Hero() {
             transition={{ delay: 0.9, duration: 0.5 }}
             className="mt-8"
           >
-            <Button
-              size="lg"
-              onClick={scrollToAbout}
-            >
+            <Button size="lg" onClick={scrollToAbout} className="cursor-pointer">
               Descubre mi trabajo
               <ArrowDown className="ml-2 h-4 w-4 group-hover:animate-bounce" />
             </Button>
@@ -117,8 +110,7 @@ export default function Hero() {
           variant="ghost"
           size="icon"
           onClick={scrollToAbout}
-          className="backdrop-blur-sm"
-          style={{ background: "oklch(1 0 0 / 10%)" }}
+          className={`cursor-pointer ${theme === "dark" ? "bg-background/20" : "bg-background/50"} backdrop-blur-sm`}
         >
           <ArrowDown className="h-6 w-6" />
         </Button>
