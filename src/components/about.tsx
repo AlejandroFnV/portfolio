@@ -3,8 +3,6 @@
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Download } from "lucide-react"
 import CvBtn from "./cv-btn"
 
 export default function About() {
@@ -43,16 +41,15 @@ export default function About() {
             <div className="w-20 h-1 bg-primary"></div>
 
             <p className="text-muted-foreground">
-              Soy un desarrollador Full Stack apasionado con experiencia en la creación de aplicaciones web y móviles
-              completas. Mi enfoque combina habilidades técnicas sólidas con un ojo para el diseño, permitiéndome
-              construir soluciones que no solo funcionan perfectamente sino que también ofrecen experiencias de usuario
-              excepcionales.
+              Soy desarrollador Full Stack y me encanta crear aplicaciones web y móviles que no solo funcionen bien,
+              sino que también sean intuitivas y eficientes. Trabajo con React, Next.js en el frontend,
+              y en el backend estoy especializado en el framework Laravel, siempre buscando la mejor combinación según cada proyecto.
             </p>
 
             <p className="text-muted-foreground">
-              Con experiencia en tecnologías frontend como React, Next.js y Vue.js, así como en backend con Node.js,
-              Express, Django y bases de datos SQL/NoSQL, puedo manejar todos los aspectos del desarrollo de
-              aplicaciones modernas.
+              También manejo MySQL y MongoDB, y tengo experiencia integrando WordPress y WooCommerce.
+              Además, me interesa el SEO, porque no basta con hacer una web increíble,
+              también hay que asegurarse de que la gente la encuentre.
             </p>
 
             <div className="pt-4">
