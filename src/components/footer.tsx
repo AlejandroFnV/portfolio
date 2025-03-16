@@ -10,7 +10,8 @@ export default function Footer() {
           <p className="text-sm text-muted-foreground">© {currentYear} Alejandro Fernández Valdivia. Todos los derechos reservados.</p>
 
           <p className="text-sm text-muted-foreground flex items-center">
-            Hecho con <Heart className="h-4 w-4 mx-1 text-red-500 fill-red-500" /> usando Next.js y Tailwind CSS
+            {/* Hecho con <Heart className="h-4 w-4 mx-1 text-red-500 fill-red-500" /> usando Next.js y Tailwind CSS */}
+            <Heart className="h-4 w-4 mx-1 text-red-500 fill-red-500" />
           </p>
         </div>
       </div>
